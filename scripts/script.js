@@ -5,7 +5,7 @@ app.config(function($routeProvider){
           .when('/',{
                 templateUrl: 'home.html'
           })
-        //   .when('/servis',{
-        //         templateUrl: 'pages/servis.html'
-        //   });
+          .when('/servis',{
+                templateUrl: 'pages/servis.html'
+          });
 });

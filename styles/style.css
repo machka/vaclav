@@ -12,6 +12,8 @@ html, body{
 
 html{
     font-size: 16px;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
@@ -23,8 +25,6 @@ body {
 }
 
 div#main{
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
     position: relative;  
     width: 100%;
     height: 100%;
@@ -38,18 +38,69 @@ div#main::after{
     left: 0;
     width: 100%;
     height: 100%;
-    opacity : 0.3;
-    background-color: #8a8a8a;
+    opacity : 0.7;
+    background-color: #000;
     z-index: -1;
 }
 
 header {
-  padding-bottom: 1rem;
+  padding: .75rem 0 .5rem 0;
   border-bottom: .05rem solid #fff;
+  background-color: #1E8CBE;
 }
 
 header h3 {
     margin-top: 0;
     margin-bottom: 0;
     line-height: 3rem;
+}
+
+.content{
+    padding: 2rem 1rem;
+}
+
+.content p{
+    margin-bottom: 1.5rem;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #1E8CBE;
+  border-top: .05rem solid #fff;
+  padding: 1rem 0 .4rem 0;
+  color: #fff;
+}
+
+/*rewrite with custom bootstrap*/
+.text-muted{
+    color: #fff;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
+    background-color: #F5851F;
+}
+
+.nav-pills>li>a{
+    background-color: #1E8CBE;
+}
+
+.nav-pills>li>a:focus, .nav-pills>li>a:hover{
+    background-color: #fff;
+    color: #DA771B;
+}
+
+header a{
+    color: #fff;
+}
+
+header a:hover{
+    color: #DA771B;
+}
+
+body{
+    font-size: 16px;
+    line-height: 1.5rem;
+    color: #e8e8e8;
 }

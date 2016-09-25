@@ -73,6 +73,14 @@ header h3 {
   color: #fff;
 }
 
+p.big-top-margin{
+    margin-top: 2rem;
+}
+
+p.small-bottom-margin{
+    margin-bottom: .5rem;
+}
+
 /*rewrite with custom bootstrap*/
 .text-muted{
     color: #fff;

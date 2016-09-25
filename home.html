@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="styles/style.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
+  <script   src="https://code.jquery.com/jquery-3.1.1.slim.min.js"   integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="   crossorigin="anonymous"></script>
   <script src="scripts/script.js"></script>
   <title>Václav</title>
 </head>
@@ -18,36 +19,17 @@
             <div class="container">
                 <nav>
                     <ul class="nav nav-pills pull-right">
-                        <li role="presentation" class="active"><a href="#">O nás</a></li>
-                        <li role="presentation"><a href="#">Servis</a></li>
-                        <li role="presentation"><a href="#">Gastro bazar</a></li>
-                        <li role="presentation"><a href="#">Kontakt</a></li>
+                        <li class="active"><a href="#/onas">O nás</a></li>
+                        <li><a href="#/servis">Servis</a></li>
+                        <li><a href="#/bazar">Gastro bazar</a></li>
+                        <li><a href="#/kontakt">Kontakt</a></li>
                     </ul>
                 </nav>
                 <h3 class="text-muted">Gastro Činátl</h3>
             </div>
         </header>
 
-        <div class="container content">
-            <p>Vážení zákazníci,<br />
-            moje aktivity spadají do oblasti velkokuchyňského zařízení pro hotely, restaurace, bary, pizzerie, cukrárny, catering, školní jídelny a jiné stravovací provozy.</p>
-            <p>Služby provádím po celé ČR s praxí 25 let v oboru.</p>
-
-            <p style="margin-bottom: .5rem;">Přehled činností:</p>
-            <ul>
-                <li>poradenská činnost</li>
-                <li>prodej náhradních dílů a příslušenství</li>
-                <li>dodávky a opravy nerezového nábytku</li>
-                <li>dodávky gastronomického zařízení renomovaných značek od prodejců v ČR</li>
-                <li>montáž a uvedení do provozu</li>
-                <li>zaučení obsluhy</li>
-                <li>záruční a pozáruční servis</li>
-                <li>dílenská oprava a repasé strojů a zařízení</li>
-                <li>dodávky mycích, čisticích a desinfekčních prostředků</li>
-                <li>výkup a prodej repasovaného zařízení</li>
-                <li>zprostředkování revize</li>
-            </ul>
-            
+        <div class="container content">            
             <div ng-view>
                 
             </div>

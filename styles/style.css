@@ -17,7 +17,7 @@ html{
 }
 
 body {
-    background-image: url(http://www.1stcommercialcleaning.co.uk/wp-content/uploads/2015/06/kitchen-clean-1080x494.jpg); 
+    background-image: url(http://www.1stcommercialcleaning.co.uk/wp-content/uploads/2015/06/kitchen-clean-1080x494.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -54,7 +54,7 @@ header p{
 }
 
 .content{
-    padding: 2rem 1rem;
+    padding: 3rem 1rem;
 }
 
 .content p{

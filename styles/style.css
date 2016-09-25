@@ -49,10 +49,8 @@ header {
   background-color: #1E8CBE;
 }
 
-header h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 3rem;
+header p{
+    line-height: 1rem;
 }
 
 .content{
@@ -71,6 +69,10 @@ header h3 {
   border-top: .05rem solid #fff;
   padding: 1rem 0 .4rem 0;
   color: #fff;
+}
+
+.no-margin{
+    margin: 0;
 }
 
 p.big-top-margin{

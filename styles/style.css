@@ -85,7 +85,7 @@ p.small-bottom-margin{
 
 /*rewrite with custom bootstrap*/
 .text-muted{
-    color: red;
+    color: #fff;
 }
 
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{

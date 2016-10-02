@@ -4,44 +4,51 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/style.css" />
+  <link href="styles/colorbox.css" rel="stylesheet" />
   <title>Milan Činátl - GASTRO</title>
 </head>
 
-<body ng-app="vaclav-app">
-    <div id="main">        
-        <header>
-            <div class="container">
-                <nav>
-                    <ul class="nav nav-pills pull-right">
-                        <li class="active"><a href="#/onas">O nás</a></li>
-                        <li><a href="#/servis">Servis</a></li>
-                        <li><a href="#/bazar">Gastro bazar</a></li>
-                        <li><a href="#/kontakt">Kontakt</a></li>
-                    </ul>
-                </nav>
-                <h3 class="text-muted no-margin">Milan Činátl - GASTRO</h3>
-                <p class="text-muted no-margin"><small>opravy, prodej a montáž gastronomického zařízení</small></p>
-            </div>
-        </header>
-
-        <div class="container content">            
-            <div ng-view>
-                
-            </div>
+<body ng-app="vaclav-app">        
+    <header>
+        <div class="container">
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                    <li class="active"><a href="#/onas">O nás</a></li>
+                    <li><a href="#/servis">Servis</a></li>
+                    <li><a href="#/bazar">Gastro bazar</a></li>
+                    <li><a href="#/kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
+            <h3 class="text-muted no-margin">Milan Činátl - GASTRO</h3>
+            <p class="text-muted no-margin"><small>opravy, prodej a montáž gastronomického zařízení</small></p>
         </div>
+    </header>
 
-        <footer class="footer">
-            <div class="container">
-                <p class="text-muted">Mobil: 603 210 238, Tel.+záznamník: 220 920 112, Email: gastrocinatl@seznam.cz.</p>
-            </div>
-        </footer>
+    <div class="container content">            
+        <div ng-view>
+            
+        </div>
     </div>
-    
+
+    <footer class="footer">
+        <div class="container">
+            <p>Mobil: 603 210 238, Tel.+záznamník: 220 920 112, Email: gastrocinatl@seznam.cz.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="scripts/jquery.colorbox-min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"   integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="   crossorigin="anonymous"></script>
     <script src="scripts/script.js"></script>
+
+    <script>
+    $(document).ready(function(){       
+        $(".group2").colorbox({rel:'group2', transition:"fade"});
+    });
+</script>
 </body>
 </html>

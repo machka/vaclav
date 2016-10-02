@@ -17,7 +17,7 @@ body {
 }
 
 header {
-  padding: 2rem 0;
+  padding: 1.8rem 0 1.6rem 0;
   border-bottom: .05rem solid #fff;
   background-color: #2677c8;
 }
@@ -27,7 +27,7 @@ header p{
 }
 
 .content{
-    padding: 3rem 1rem;
+    padding: 3rem 1rem 8rem 1rem;
 }
 
 .content p{
@@ -40,8 +40,9 @@ header p{
   width: 100%;
   background-color: #f4f4f4;
   border-top: .05rem solid #fff;
-  padding: 2rem 0 1rem 0;
+  padding: 1.5rem 0 .5rem 0;
   color: #fff;
+  line-height: 2rem;
 }
 
 .no-margin{
@@ -82,9 +83,25 @@ header a:hover{
     color: #DA771B;
 }
 
+header h3{
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+header p{
+    font-size: 1rem;
+    color: #fff;
+}
+
+footer i{
+    color: #2677c8;
+    font-size: 1.5rem;
+}
+
 footer p{
     color: #2677c8;   
-    font-size: .9rem; 
+    font-size: .9rem;
+    line-height: 1.1rem;
 }
 
 body{

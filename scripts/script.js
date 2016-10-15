@@ -20,8 +20,8 @@ app.config(function($routeProvider){
 });
 
 $(document).ready(function() {
-      $("ul.nav-pills a").on('click', function(){
-          $("ul.nav-pills li").each(function(){
+      $("ul.nav a").on('click', function(){
+          $("ul.nav li").each(function(){
                 $(this).removeClass('active');
           })
 

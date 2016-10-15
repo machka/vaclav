@@ -83,7 +83,7 @@ header p{
 }
 
 .content{
-    padding: 1rem 1rem 8rem 1rem;
+    padding: 1rem 0 8rem 0;
 }
 
 @media (max-width: 768px){

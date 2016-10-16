@@ -11,7 +11,7 @@
   <title>Milan Činátl - GASTRO</title>
 </head>
 
-<body ng-app="vaclav-app">        
+<body>        
     <header>
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
@@ -27,13 +27,13 @@
                         <p>opravy, prodej a montáž gastronomického zařízení</p>
                     </div>
                 </div>               
-
+                
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="#/onas">O nás</a></li>
-                        <li><a href="#/servis">Servis</a></li>
-                        <li><a href="#/bazar">Gastro bazar</a></li>
-                        <li><a href="#/kontakt">Kontakt</a></li>
+                        <li id="li-onas"><a href="#/onas">O nás</a></li>
+                        <li id="li-servis"><a href="#/servis">Servis</a></li>
+                        <li id="li-bazar"><a href="#/bazar">Gastro bazar</a></li>
+                        <li id="li-kontakt"><a href="#/kontakt">Kontakt</a></li>
                     </ul>
                 </div>
             </div>
@@ -42,18 +42,152 @@
 
     <div class="container content">         
         <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div ng-view>
+
+            <div id="tab-onas" style="display:none;">
+
+                <div class="row">
+                    <div class="col-xs-12">
+                                            
+                        <p>Vážení zákazníci,<br />
+                        moje aktivity spadají do oblasti velkokuchyňského zařízení pro hotely, restaurace, bary, pizzerie, cukrárny, catering, školní jídelny a jiné stravovací provozy.</p>
+                        <p>Služby provádím po celé ČR s praxí 25 let v oboru.</p>
+
+                        <p class="small-bottom-margin">Přehled činností:</p>
+                        <ul>
+                            <li>poradenská činnost</li>
+                            <li>prodej náhradních dílů a příslušenství</li>
+                            <li>dodávky a opravy nerezového nábytku</li>
+                            <li>dodávky gastronomického zařízení renomovaných značek od prodejců v ČR</li>
+                            <li>montáž a uvedení do provozu</li>
+                            <li>zaučení obsluhy</li>
+                            <li>záruční a pozáruční servis</li>
+                            <li>dílenská oprava a repasé strojů a zařízení</li>
+                            <li>dodávky mycích, čisticích a desinfekčních prostředků</li>
+                            <li>výkup a prodej repasovaného zařízení</li>
+                            <li>zprostředkování revize</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
             
+            <div id="tab-servis" style="display:none;">
+
+                <div class="row">
+                    <div class="col-sm-4 col-xs-6">
+                        <p class="small-bottom-margin"><strong>Teplá kuchyně</strong></p>
+
+                        <p>
+                            konvektomaty<br />
+                            sporáky a vařidla<br />
+                            grilovací plotny<br />
+                            smažící pánve<br />
+                            fritézy<br />
+                            výdejní pulty<br />
+                            ohřívače<br />
+                            kotle<br />
+                            grily<br />
+                            režony<br />
+                            croctoasty<br />
+                            salamandry<br />
+                            pece na pizzu<br />
+                            pece
+                        </p>
+                    </div>
+                    <div class="col-sm-4 col-xs-6">
+                        <p class="small-bottom-margin"><strong>Mycí stroje</strong></p>
+
+                        <p>
+                            mycí stroje na sklo<br />
+                            mycí stroje na bílé nádobí<br />
+                            mycí stroje na černé nádobí<br />
+                            zařízení na úpravu vody<br />
+                        </p>
+
+
+                        <p class="small-bottom-margin big-top-margin"><strong>Pracovní stroje</strong></p>
+
+                        <p>
+                            roboty<br />
+                            škrabky<br />
+                            kutry<br />
+                            řezačky masa<br />
+                            ponorné mixéry<br />
+                            hnětače<br />
+                            naklepávačky masa<br />
+                            nářezové stroje<br />
+                            drtiče odpadů<br />
+                        </p>
+                    </div>
+                    <div class="col-sm-4 col-xs-6">
+                        <p class="small-bottom-margin"><strong>Výdej jídel</strong></p>
+
+                        <p>
+                            výdejní linky<br />
+                            teplé vitríny<br />
+                            vyhřívané vany<br />
+                            zásobníky talířů<br />
+                        </p>
+
+                        <p class="small-bottom-margin big-top-margin"><strong>Kávovary</strong></p>
+
+                        <p>
+                            otáč. a vibrač.pumpou<br />
+                            poloaut. a automatické<br />
+                            profesionální a poloprof.<br />
+                            mlýnky na kávu<br />
+                            změkčovače vody<br />
+                        </p>
+
                     </div>
                 </div>
+
+            </div>
+
+            <div id="tab-bazar" style="display:none;">
+
+                
+            
+            </div>
+
+            <div id="tab-kontakt" style="display:none;">
+                
+                <div class="row">
+                    <div class="col-sm-4 col-xs-6">
+                        <p class="small-bottom-margin"><strong>Poštovní adresa</strong></p>
+                        <p>Milan Činátl - GASTRO<br />
+                            Stehlíkova 929<br />
+                            165 00, Praha 6
+                        </p>
+                    </div>
+                    <div class="col-sm-4 col-xs-6">
+                         <p class="small-bottom-margin"><strong>Fakturační údaje</strong></p>
+                         <p>IČO: 49227807<br />
+                            DIČ: CZ6207131062
+                        </p>
+                    </div>
+                    <div class="clearfix visible-xs-block"></div>
+                    <div class="col-sm-4 col-xs-6">
+                         <p class="small-bottom-margin"><strong>Bankovní spojení</strong></p>
+                         <p>ČSOB<br />
+                            účet: 163190160/0300
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-sm-12">
+
+                        <div id="mapa"></div>
+
+                    </div>
+                </div>
+            
             </div>
         </div>
     </div>
-
-    <script src="//api.mapy.cz/loader.js"></script>
-	<script>Loader.load()</script>
 
     <footer class="footer">
         <div class="container">
@@ -80,9 +214,14 @@
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="scripts/jquery.bxslider.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="scripts/router.js"></script>
     <script src="scripts/script.js"></script>
+    <script src="//api.mapy.cz/loader.js"></script>
+	<script>Loader.load()</script>
+
+    <script type="text/javascript">
+        
+    </script>
 </body>
 </html>

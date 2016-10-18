@@ -1,4 +1,13 @@
 $(document).ready(function() {
+      // $('.thumbnail').click(function(event){
+      //       $('.modal-body').empty();
+      //       var title = $(this).parent('span').attr("title");
+      //       $('.modal-title').html(title);
+      //       $($(this).parents('div').html()).appendTo('.modal-body');
+      //       $('#myModal').modal({show:true});
+      //       event.preventDefault();
+      // });
+
       var router = new Router()
       .addRoute('#/', function(req, next){
             $("#tab-onas").show();

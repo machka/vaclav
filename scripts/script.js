@@ -7,27 +7,42 @@ $(document).ready(function() {
       //       $('#myModal').modal({show:true});
       //       event.preventDefault();
       // });
-
+      
       var router = new Router()
       .addRoute('#/', function(req, next){
-            $("#tab-onas").show();
+            // $("#tab-onas").show();
             $("#li-onas").addClass('active');
+
+            $("#dynamic-content").html($("#template-onas").html());
       })
       .addRoute('#/onas', function(req, next){
-            $("#tab-onas").show();
+            // $("#tab-onas").show();
             $("#li-onas").addClass('active');
+
+            $("#dynamic-content").html($("#template-onas").html());
       })
       .addRoute('#/servis', function(req, next){
-            $("#tab-servis").show();
+            // $("#tab-servis").show();
             $("#li-servis").addClass('active');
+
+            $("#dynamic-content").html($("#template-servis").html());
       })
       .addRoute('#/bazar', function(req, next){
-            $("#tab-bazar").show();
+            // $("#tab-bazar").show();
             $("#li-bazar").addClass('active');
+
+            $("#dynamic-content").html($("#template-bazar").html());
+            
+            $('ul.first').bsPhotoGallery({
+                  "classes" : "col-lg-4 col-md-4 col-sm-4 col-xs-6",
+                  "hasModal" : true
+            });
       })
       .addRoute('#/kontakt', function(req, next){
-            $("#tab-kontakt").show();
+            // $("#tab-kontakt").show();
             $("#li-kontakt").addClass('active');
+
+            $("#dynamic-content").html($("#template-kontakt").html());
 
             var stred = SMap.Coords.fromWGS84(14.3771451, 50.1341075);
             var mapa = new SMap(JAK.gel("mapa"), stred, 17);

@@ -70,11 +70,9 @@
 
           if (Number(index) > 0){
             Preload(1, Number(index) - 1);
-            console.log(Number(index) - 1);
           }
           if(Number(index) < maxIndex){
             Preload(2, Number(index) + 1);
-            console.log(Number(index) + 1);
           }
           
           clicked.img = src;
@@ -138,11 +136,9 @@
 
           if (index > 0){
             Preload(1, Number(index) - 1);
-            console.log(Number(index) - 1);
           }
           if(index < maxIndex){
             Preload(2, Number(index) + 1);
-            console.log(Number(index) + 1);
           }
 
           var src = ul.find('li[data-bsp-li-index="'+index+'"] img').attr('src');

@@ -37,6 +37,8 @@ $(document).ready(function() {
                   "classes" : "col-lg-4 col-md-4 col-sm-4 col-xs-6",
                   "hasModal" : true
             });
+
+            
       })
       .addRoute('#/kontakt', function(req, next){
             // $("#tab-kontakt").show();

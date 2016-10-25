@@ -64,6 +64,18 @@
           var pText = $(this).find('.text').html();        
           var modalText = typeof pText !== 'undefined' ? pText : 'undefined';
           var alt =  typeof theImg.attr('alt') == 'string' ? theImg.attr('alt') : null;
+
+          var minIndex = 0;
+          var maxIndex = getMaxIndex($(this).parent('ul'));
+
+          if (index > 0){
+            Preload(Number(index) - 1);
+            console.log(Number(index) - 1);
+          }
+          if(index < maxIndex){
+            Preload(Number(index) + 1);
+            console.log(Number(index) + 1);
+          }
           
           clicked.img = src;
           clicked.prevImg = parseInt(index) - parseInt(1);
@@ -101,11 +113,38 @@
         $('#bsPhotoGalleryModal').modal('hide');
       }
 
+      function getMaxIndex(ul){
+        var maxIndex = 0;
+
+        ul.find('li:not([data-bsp-li-index=""])').each(function(){
+            if(!isNaN($(this).attr('data-bsp-li-index'))){
+              if(Number($(this).attr('data-bsp-li-index')) > maxIndex)
+              {
+                maxIndex = Number($(this).attr('data-bsp-li-index'));
+              }
+            }
+          });
+
+          return maxIndex;
+      }
+
       function nextPrevHandler(){
 
           var ul = $(getCurrentUl());
           var index = $(this).attr('href');
 
+          var minIndex = 0;
+          var maxIndex = getMaxIndex($(this).parent('ul'));
+
+          if (index > 0){
+            Preload(Number(index) - 1);
+            console.log(Number(index) - 1);
+          }
+          if(index < maxIndex){
+            Preload(Number(index) + 1);
+            console.log(Number(index) + 1);
+          }
+          
           var src = ul.find('li[data-bsp-li-index="'+index+'"] img').attr('src');
           var largeImg = ul.find('li[data-bsp-li-index="'+index+'"] img').attr('data-bsp-large-src');
           if(typeof largeImg === 'string'){
@@ -147,6 +186,9 @@
           // console.log(clicked);
         showHideControls();
         return false;
+      }
+      function Preload(index){
+         $("#img-preloader").attr('src', $('ul.bsPhotoGallery li[data-bsp-li-index='+index+'] img').attr('data-bsp-large-src'));
       }
       function clearModalContent(){
         $('#bsPhotoGalleryModal .modal-body').html('');

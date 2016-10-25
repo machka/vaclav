@@ -137,11 +137,11 @@
           var maxIndex = getMaxIndex($(this).parent('ul'));
 
           if (index > 0){
-            Preload(Number(index) - 1);
+            Preload(1, Number(index) - 1);
             console.log(Number(index) - 1);
           }
           if(index < maxIndex){
-            Preload(Number(index) + 1);
+            Preload(2, Number(index) + 1);
             console.log(Number(index) + 1);
           }
 

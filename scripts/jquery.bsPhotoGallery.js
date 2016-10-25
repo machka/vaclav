@@ -68,12 +68,12 @@
           var minIndex = 0;
           var maxIndex = getMaxIndex($(this).parent('ul'));
 
-          if (index > 0){
-            Preload(Number(index) - 1);
+          if (Number(index) > 0){
+            Preload(1, Number(index) - 1);
             console.log(Number(index) - 1);
           }
-          if(index < maxIndex){
-            Preload(Number(index) + 1);
+          if(Number(index) < maxIndex){
+            Preload(2, Number(index) + 1);
             console.log(Number(index) + 1);
           }
           
@@ -144,7 +144,7 @@
             Preload(Number(index) + 1);
             console.log(Number(index) + 1);
           }
-          
+
           var src = ul.find('li[data-bsp-li-index="'+index+'"] img').attr('src');
           var largeImg = ul.find('li[data-bsp-li-index="'+index+'"] img').attr('data-bsp-large-src');
           if(typeof largeImg === 'string'){
@@ -187,8 +187,8 @@
         showHideControls();
         return false;
       }
-      function Preload(index){
-         $("#img-preloader").attr('src', $('ul.bsPhotoGallery li[data-bsp-li-index='+index+'] img').attr('data-bsp-large-src'));
+      function Preload(slot, index){
+         $("#img-preloader-"+slot).attr('src', $('ul.bsPhotoGallery li[data-bsp-li-index='+index+'] img').attr('data-bsp-large-src'));
       }
       function clearModalContent(){
         $('#bsPhotoGalleryModal .modal-body').html('');

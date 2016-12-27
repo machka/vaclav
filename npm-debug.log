@@ -1,0 +1,579 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'yo',
+1 verbose cli   'generator-aspnet',
+1 verbose cli   'bower' ]
+2 info using npm@2.15.9
+3 info using node@v4.5.0
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'yo', null ]
+7 verbose cache add spec yo
+8 silly cache add args [ 'generator-aspnet', null ]
+9 verbose cache add spec generator-aspnet
+10 silly cache add args [ 'bower', null ]
+11 verbose cache add spec bower
+12 silly cache add parsed spec Result {
+12 silly cache add   raw: 'yo',
+12 silly cache add   scope: null,
+12 silly cache add   name: 'yo',
+12 silly cache add   rawSpec: '',
+12 silly cache add   spec: 'latest',
+12 silly cache add   type: 'tag' }
+13 silly addNamed yo@latest
+14 verbose addNamed "latest" is being treated as a dist-tag for yo
+15 info addNameTag [ 'yo', 'latest' ]
+16 silly mapToRegistry name yo
+17 silly mapToRegistry using default registry
+18 silly mapToRegistry registry https://registry.npmjs.org/
+19 silly mapToRegistry data Result {
+19 silly mapToRegistry   raw: 'yo',
+19 silly mapToRegistry   scope: null,
+19 silly mapToRegistry   name: 'yo',
+19 silly mapToRegistry   rawSpec: '',
+19 silly mapToRegistry   spec: 'latest',
+19 silly mapToRegistry   type: 'tag' }
+20 silly mapToRegistry uri https://registry.npmjs.org/yo
+21 verbose addNameTag registry:https://registry.npmjs.org/yo not in flight; fetching
+22 silly cache add parsed spec Result {
+22 silly cache add   raw: 'generator-aspnet',
+22 silly cache add   scope: null,
+22 silly cache add   name: 'generator-aspnet',
+22 silly cache add   rawSpec: '',
+22 silly cache add   spec: 'latest',
+22 silly cache add   type: 'tag' }
+23 silly addNamed generator-aspnet@latest
+24 verbose addNamed "latest" is being treated as a dist-tag for generator-aspnet
+25 info addNameTag [ 'generator-aspnet', 'latest' ]
+26 silly mapToRegistry name generator-aspnet
+27 silly mapToRegistry using default registry
+28 silly mapToRegistry registry https://registry.npmjs.org/
+29 silly mapToRegistry data Result {
+29 silly mapToRegistry   raw: 'generator-aspnet',
+29 silly mapToRegistry   scope: null,
+29 silly mapToRegistry   name: 'generator-aspnet',
+29 silly mapToRegistry   rawSpec: '',
+29 silly mapToRegistry   spec: 'latest',
+29 silly mapToRegistry   type: 'tag' }
+30 silly mapToRegistry uri https://registry.npmjs.org/generator-aspnet
+31 verbose addNameTag registry:https://registry.npmjs.org/generator-aspnet not in flight; fetching
+32 silly cache add parsed spec Result {
+32 silly cache add   raw: 'bower',
+32 silly cache add   scope: null,
+32 silly cache add   name: 'bower',
+32 silly cache add   rawSpec: '',
+32 silly cache add   spec: 'latest',
+32 silly cache add   type: 'tag' }
+33 silly addNamed bower@latest
+34 verbose addNamed "latest" is being treated as a dist-tag for bower
+35 info addNameTag [ 'bower', 'latest' ]
+36 silly mapToRegistry name bower
+37 silly mapToRegistry using default registry
+38 silly mapToRegistry registry https://registry.npmjs.org/
+39 silly mapToRegistry data Result {
+39 silly mapToRegistry   raw: 'bower',
+39 silly mapToRegistry   scope: null,
+39 silly mapToRegistry   name: 'bower',
+39 silly mapToRegistry   rawSpec: '',
+39 silly mapToRegistry   spec: 'latest',
+39 silly mapToRegistry   type: 'tag' }
+40 silly mapToRegistry uri https://registry.npmjs.org/bower
+41 verbose addNameTag registry:https://registry.npmjs.org/bower not in flight; fetching
+42 verbose request uri https://registry.npmjs.org/yo
+43 verbose request no auth needed
+44 info attempt registry request try #1 at 9:56:04 AM
+45 verbose request id d1fe6fe973180794
+46 http request GET https://registry.npmjs.org/yo
+47 verbose request uri https://registry.npmjs.org/generator-aspnet
+48 verbose request no auth needed
+49 info attempt registry request try #1 at 9:56:04 AM
+50 http request GET https://registry.npmjs.org/generator-aspnet
+51 verbose request uri https://registry.npmjs.org/bower
+52 verbose request no auth needed
+53 info attempt registry request try #1 at 9:56:04 AM
+54 http request GET https://registry.npmjs.org/bower
+55 http 200 https://registry.npmjs.org/yo
+56 verbose headers { server: 'nginx/1.10.1',
+56 verbose headers   'content-type': 'application/json',
+56 verbose headers   'last-modified': 'Thu, 08 Dec 2016 21:28:36 GMT',
+56 verbose headers   etag: 'W/"5849d084-1151b"',
+56 verbose headers   'content-encoding': 'gzip',
+56 verbose headers   'cache-control': 'max-age=300',
+56 verbose headers   'content-length': '9558',
+56 verbose headers   'accept-ranges': 'bytes',
+56 verbose headers   date: 'Sat, 10 Dec 2016 08:55:50 GMT',
+56 verbose headers   via: '1.1 varnish',
+56 verbose headers   age: '134',
+56 verbose headers   connection: 'keep-alive',
+56 verbose headers   'x-served-by': 'cache-fra1234-FRA',
+56 verbose headers   'x-cache': 'HIT',
+56 verbose headers   'x-cache-hits': '1',
+56 verbose headers   'x-timer': 'S1481360150.665218,VS0,VE0',
+56 verbose headers   vary: 'Accept-Encoding' }
+57 silly get cb [ 200,
+57 silly get   { server: 'nginx/1.10.1',
+57 silly get     'content-type': 'application/json',
+57 silly get     'last-modified': 'Thu, 08 Dec 2016 21:28:36 GMT',
+57 silly get     etag: 'W/"5849d084-1151b"',
+57 silly get     'content-encoding': 'gzip',
+57 silly get     'cache-control': 'max-age=300',
+57 silly get     'content-length': '9558',
+57 silly get     'accept-ranges': 'bytes',
+57 silly get     date: 'Sat, 10 Dec 2016 08:55:50 GMT',
+57 silly get     via: '1.1 varnish',
+57 silly get     age: '134',
+57 silly get     connection: 'keep-alive',
+57 silly get     'x-served-by': 'cache-fra1234-FRA',
+57 silly get     'x-cache': 'HIT',
+57 silly get     'x-cache-hits': '1',
+57 silly get     'x-timer': 'S1481360150.665218,VS0,VE0',
+57 silly get     vary: 'Accept-Encoding' } ]
+58 verbose get saving yo to /Users/vaclavmachka/.npm/registry.npmjs.org/yo/.cache.json
+59 verbose correctMkdir /Users/vaclavmachka/.npm correctMkdir not in flight; initializing
+60 http 200 https://registry.npmjs.org/generator-aspnet
+61 verbose headers { server: 'nginx/1.10.1',
+61 verbose headers   'content-type': 'application/json',
+61 verbose headers   'last-modified': 'Tue, 22 Nov 2016 22:31:32 GMT',
+61 verbose headers   etag: 'W/"5834c744-1963b"',
+61 verbose headers   'content-encoding': 'gzip',
+61 verbose headers   'cache-control': 'max-age=300',
+61 verbose headers   'content-length': '11641',
+61 verbose headers   'accept-ranges': 'bytes',
+61 verbose headers   date: 'Sat, 10 Dec 2016 08:55:50 GMT',
+61 verbose headers   via: '1.1 varnish',
+61 verbose headers   age: '0',
+61 verbose headers   connection: 'keep-alive',
+61 verbose headers   'x-served-by': 'cache-fra1250-FRA',
+61 verbose headers   'x-cache': 'MISS',
+61 verbose headers   'x-cache-hits': '0',
+61 verbose headers   'x-timer': 'S1481360150.665789,VS0,VE3',
+61 verbose headers   vary: 'Accept-Encoding' }
+62 silly get cb [ 200,
+62 silly get   { server: 'nginx/1.10.1',
+62 silly get     'content-type': 'application/json',
+62 silly get     'last-modified': 'Tue, 22 Nov 2016 22:31:32 GMT',
+62 silly get     etag: 'W/"5834c744-1963b"',
+62 silly get     'content-encoding': 'gzip',
+62 silly get     'cache-control': 'max-age=300',
+62 silly get     'content-length': '11641',
+62 silly get     'accept-ranges': 'bytes',
+62 silly get     date: 'Sat, 10 Dec 2016 08:55:50 GMT',
+62 silly get     via: '1.1 varnish',
+62 silly get     age: '0',
+62 silly get     connection: 'keep-alive',
+62 silly get     'x-served-by': 'cache-fra1250-FRA',
+62 silly get     'x-cache': 'MISS',
+62 silly get     'x-cache-hits': '0',
+62 silly get     'x-timer': 'S1481360150.665789,VS0,VE3',
+62 silly get     vary: 'Accept-Encoding' } ]
+63 verbose get saving generator-aspnet to /Users/vaclavmachka/.npm/registry.npmjs.org/generator-aspnet/.cache.json
+64 verbose correctMkdir /Users/vaclavmachka/.npm correctMkdir not in flight; initializing
+65 http 200 https://registry.npmjs.org/bower
+66 verbose headers { server: 'nginx/1.10.1',
+66 verbose headers   'content-type': 'application/json',
+66 verbose headers   'last-modified': 'Fri, 09 Dec 2016 15:15:05 GMT',
+66 verbose headers   etag: 'W/"584aca79-2ac25"',
+66 verbose headers   'content-encoding': 'gzip',
+66 verbose headers   'cache-control': 'max-age=300',
+66 verbose headers   'content-length': '16305',
+66 verbose headers   'accept-ranges': 'bytes',
+66 verbose headers   date: 'Sat, 10 Dec 2016 08:55:50 GMT',
+66 verbose headers   via: '1.1 varnish',
+66 verbose headers   age: '95',
+66 verbose headers   connection: 'keep-alive',
+66 verbose headers   'x-served-by': 'cache-fra1238-FRA',
+66 verbose headers   'x-cache': 'HIT',
+66 verbose headers   'x-cache-hits': '4',
+66 verbose headers   'x-timer': 'S1481360150.664948,VS0,VE0',
+66 verbose headers   vary: 'Accept-Encoding' }
+67 silly get cb [ 200,
+67 silly get   { server: 'nginx/1.10.1',
+67 silly get     'content-type': 'application/json',
+67 silly get     'last-modified': 'Fri, 09 Dec 2016 15:15:05 GMT',
+67 silly get     etag: 'W/"584aca79-2ac25"',
+67 silly get     'content-encoding': 'gzip',
+67 silly get     'cache-control': 'max-age=300',
+67 silly get     'content-length': '16305',
+67 silly get     'accept-ranges': 'bytes',
+67 silly get     date: 'Sat, 10 Dec 2016 08:55:50 GMT',
+67 silly get     via: '1.1 varnish',
+67 silly get     age: '95',
+67 silly get     connection: 'keep-alive',
+67 silly get     'x-served-by': 'cache-fra1238-FRA',
+67 silly get     'x-cache': 'HIT',
+67 silly get     'x-cache-hits': '4',
+67 silly get     'x-timer': 'S1481360150.664948,VS0,VE0',
+67 silly get     vary: 'Accept-Encoding' } ]
+68 verbose get saving bower to /Users/vaclavmachka/.npm/registry.npmjs.org/bower/.cache.json
+69 verbose correctMkdir /Users/vaclavmachka/.npm correctMkdir not in flight; initializing
+70 silly addNameTag next cb for yo with tag latest
+71 silly addNamed yo@1.8.5
+72 verbose addNamed "1.8.5" is a plain semver version for yo
+73 silly addNameTag next cb for generator-aspnet with tag latest
+74 silly addNamed generator-aspnet@0.2.5
+75 verbose addNamed "0.2.5" is a plain semver version for generator-aspnet
+76 silly mapToRegistry name yo
+77 silly mapToRegistry using default registry
+78 silly mapToRegistry registry https://registry.npmjs.org/
+79 silly mapToRegistry data Result {
+79 silly mapToRegistry   raw: 'yo',
+79 silly mapToRegistry   scope: null,
+79 silly mapToRegistry   name: 'yo',
+79 silly mapToRegistry   rawSpec: '',
+79 silly mapToRegistry   spec: 'latest',
+79 silly mapToRegistry   type: 'tag' }
+80 silly mapToRegistry uri https://registry.npmjs.org/yo
+81 verbose addRemoteTarball https://registry.npmjs.org/yo/-/yo-1.8.5.tgz not in flight; adding
+82 verbose addRemoteTarball [ 'https://registry.npmjs.org/yo/-/yo-1.8.5.tgz',
+82 verbose addRemoteTarball   '776ab9ec79a7882f8d4f7a9e10214fdab050d928' ]
+83 silly mapToRegistry name generator-aspnet
+84 silly mapToRegistry using default registry
+85 silly mapToRegistry registry https://registry.npmjs.org/
+86 silly mapToRegistry data Result {
+86 silly mapToRegistry   raw: 'generator-aspnet',
+86 silly mapToRegistry   scope: null,
+86 silly mapToRegistry   name: 'generator-aspnet',
+86 silly mapToRegistry   rawSpec: '',
+86 silly mapToRegistry   spec: 'latest',
+86 silly mapToRegistry   type: 'tag' }
+87 silly mapToRegistry uri https://registry.npmjs.org/generator-aspnet
+88 verbose addRemoteTarball https://registry.npmjs.org/generator-aspnet/-/generator-aspnet-0.2.5.tgz not in flight; adding
+89 verbose addRemoteTarball [ 'https://registry.npmjs.org/generator-aspnet/-/generator-aspnet-0.2.5.tgz',
+89 verbose addRemoteTarball   '6a644ebd2537debf8c5ca8d69dcda93ba62e2f15' ]
+90 silly addNameTag next cb for bower with tag latest
+91 silly addNamed bower@1.8.0
+92 verbose addNamed "1.8.0" is a plain semver version for bower
+93 silly mapToRegistry name bower
+94 silly mapToRegistry using default registry
+95 silly mapToRegistry registry https://registry.npmjs.org/
+96 silly mapToRegistry data Result {
+96 silly mapToRegistry   raw: 'bower',
+96 silly mapToRegistry   scope: null,
+96 silly mapToRegistry   name: 'bower',
+96 silly mapToRegistry   rawSpec: '',
+96 silly mapToRegistry   spec: 'latest',
+96 silly mapToRegistry   type: 'tag' }
+97 silly mapToRegistry uri https://registry.npmjs.org/bower
+98 verbose addRemoteTarball https://registry.npmjs.org/bower/-/bower-1.8.0.tgz not in flight; adding
+99 verbose addRemoteTarball [ 'https://registry.npmjs.org/bower/-/bower-1.8.0.tgz',
+99 verbose addRemoteTarball   '55dbebef0ad9155382d9e9d3e497c1372345b44a' ]
+100 info retry fetch attempt 1 at 9:56:04 AM
+101 info attempt registry request try #1 at 9:56:04 AM
+102 http fetch GET https://registry.npmjs.org/yo/-/yo-1.8.5.tgz
+103 info retry fetch attempt 1 at 9:56:04 AM
+104 info attempt registry request try #1 at 9:56:04 AM
+105 http fetch GET https://registry.npmjs.org/generator-aspnet/-/generator-aspnet-0.2.5.tgz
+106 info retry fetch attempt 1 at 9:56:04 AM
+107 info attempt registry request try #1 at 9:56:04 AM
+108 http fetch GET https://registry.npmjs.org/bower/-/bower-1.8.0.tgz
+109 http fetch 200 https://registry.npmjs.org/yo/-/yo-1.8.5.tgz
+110 http fetch 200 https://registry.npmjs.org/bower/-/bower-1.8.0.tgz
+111 http fetch 200 https://registry.npmjs.org/generator-aspnet/-/generator-aspnet-0.2.5.tgz
+112 silly fetchAndShaCheck shasum 776ab9ec79a7882f8d4f7a9e10214fdab050d928
+113 verbose addTmpTarball /var/folders/zs/dqpq_kkn50v55_6cywpvkllc0000gn/T/npm-91095-c7934621/registry.npmjs.org/yo/-/yo-1.8.5.tgz not in flight; adding
+114 verbose addTmpTarball already have metadata; skipping unpack for yo@1.8.5
+115 verbose correctMkdir /Users/vaclavmachka/.npm correctMkdir not in flight; initializing
+116 silly cache afterAdd yo@1.8.5
+117 verbose afterAdd /Users/vaclavmachka/.npm/yo/1.8.5/package/package.json not in flight; writing
+118 verbose correctMkdir /Users/vaclavmachka/.npm correctMkdir not in flight; initializing
+119 verbose afterAdd /Users/vaclavmachka/.npm/yo/1.8.5/package/package.json written
+120 silly fetchAndShaCheck shasum 6a644ebd2537debf8c5ca8d69dcda93ba62e2f15
+121 verbose addTmpTarball /var/folders/zs/dqpq_kkn50v55_6cywpvkllc0000gn/T/npm-91095-c7934621/registry.npmjs.org/generator-aspnet/-/generator-aspnet-0.2.5.tgz not in flight; adding
+122 verbose addTmpTarball already have metadata; skipping unpack for generator-aspnet@0.2.5
+123 verbose correctMkdir /Users/vaclavmachka/.npm correctMkdir not in flight; initializing
+124 silly cache afterAdd generator-aspnet@0.2.5
+125 verbose afterAdd /Users/vaclavmachka/.npm/generator-aspnet/0.2.5/package/package.json not in flight; writing
+126 verbose correctMkdir /Users/vaclavmachka/.npm correctMkdir not in flight; initializing
+127 verbose afterAdd /Users/vaclavmachka/.npm/generator-aspnet/0.2.5/package/package.json written
+128 silly fetchAndShaCheck shasum 55dbebef0ad9155382d9e9d3e497c1372345b44a
+129 verbose addTmpTarball /var/folders/zs/dqpq_kkn50v55_6cywpvkllc0000gn/T/npm-91095-c7934621/registry.npmjs.org/bower/-/bower-1.8.0.tgz not in flight; adding
+130 verbose addTmpTarball already have metadata; skipping unpack for bower@1.8.0
+131 verbose correctMkdir /Users/vaclavmachka/.npm correctMkdir not in flight; initializing
+132 silly cache afterAdd bower@1.8.0
+133 verbose afterAdd /Users/vaclavmachka/.npm/bower/1.8.0/package/package.json not in flight; writing
+134 verbose correctMkdir /Users/vaclavmachka/.npm correctMkdir not in flight; initializing
+135 verbose afterAdd /Users/vaclavmachka/.npm/bower/1.8.0/package/package.json written
+136 silly install resolved [ { name: 'yo',
+136 silly install resolved     version: '1.8.5',
+136 silly install resolved     description: 'CLI tool for running Yeoman generators',
+136 silly install resolved     homepage: 'http://yeoman.io',
+136 silly install resolved     author: { name: 'Yeoman' },
+136 silly install resolved     files: [ 'lib' ],
+136 silly install resolved     main: 'lib',
+136 silly install resolved     keywords:
+136 silly install resolved      [ 'cli-app',
+136 silly install resolved        'cli',
+136 silly install resolved        'front-end',
+136 silly install resolved        'development',
+136 silly install resolved        'dev',
+136 silly install resolved        'build',
+136 silly install resolved        'web',
+136 silly install resolved        'tool',
+136 silly install resolved        'scaffold',
+136 silly install resolved        'stack',
+136 silly install resolved        'yeoman',
+136 silly install resolved        'generator',
+136 silly install resolved        'generate',
+136 silly install resolved        'app',
+136 silly install resolved        'boilerplate' ],
+136 silly install resolved     license: 'BSD-2-Clause',
+136 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/yeoman/yo.git' },
+136 silly install resolved     bin: { yo: 'lib/cli.js', 'yo-complete': 'lib/completion/index.js' },
+136 silly install resolved     engines: { node: '>=0.12.0' },
+136 silly install resolved     scripts:
+136 silly install resolved      { test: 'gulp',
+136 silly install resolved        postinstall: 'yodoctor',
+136 silly install resolved        postupdate: 'yodoctor',
+136 silly install resolved        prepublish: 'gulp prepublish' },
+136 silly install resolved     dependencies:
+136 silly install resolved      { async: '^1.0.0',
+136 silly install resolved        chalk: '^1.0.0',
+136 silly install resolved        'cli-list': '^0.1.1',
+136 silly install resolved        configstore: '^1.0.0',
+136 silly install resolved        'cross-spawn': '^3.0.1',
+136 silly install resolved        figures: '^1.3.5',
+136 silly install resolved        fullname: '^2.0.0',
+136 silly install resolved        got: '^5.0.0',
+136 silly install resolved        'humanize-string': '^1.0.0',
+136 silly install resolved        inquirer: '^0.11.0',
+136 silly install resolved        insight: '^0.7.0',
+136 silly install resolved        lodash: '^3.2.0',
+136 silly install resolved        meow: '^3.0.0',
+136 silly install resolved        'npm-keyword': '^4.1.0',
+136 silly install resolved        opn: '^3.0.2',
+136 silly install resolved        'package-json': '^2.1.0',
+136 silly install resolved        'parse-help': '^0.1.1',
+136 silly install resolved        'read-pkg-up': '^1.0.1',
+136 silly install resolved        repeating: '^2.0.0',
+136 silly install resolved        'root-check': '^1.0.0',
+136 silly install resolved        'sort-on': '^1.0.0',
+136 silly install resolved        'string-length': '^1.0.0',
+136 silly install resolved        tabtab: '^1.3.0',
+136 silly install resolved        titleize: '^1.0.0',
+136 silly install resolved        'update-notifier': '^0.6.0',
+136 silly install resolved        'user-home': '^2.0.0',
+136 silly install resolved        'yeoman-character': '^1.0.0',
+136 silly install resolved        'yeoman-doctor': '^2.0.0',
+136 silly install resolved        'yeoman-environment': '^1.6.1',
+136 silly install resolved        yosay: '^1.0.0' },
+136 silly install resolved     devDependencies:
+136 silly install resolved      { gulp: '^3.6.0',
+136 silly install resolved        'gulp-coveralls': '^0.1.0',
+136 silly install resolved        'gulp-eslint': '^2.0.0',
+136 silly install resolved        'gulp-exclude-gitignore': '^1.0.0',
+136 silly install resolved        'gulp-istanbul': '^0.10.4',
+136 silly install resolved        'gulp-mocha': '^2.0.0',
+136 silly install resolved        'gulp-nsp': '^2.1.0',
+136 silly install resolved        'gulp-plumber': '^1.0.0',
+136 silly install resolved        mocha: '^2.1.0',
+136 silly install resolved        mockery: '^1.4.0',
+136 silly install resolved        nock: '^8.0.0',
+136 silly install resolved        nsp: '^2.2.0',
+136 silly install resolved        proxyquire: '^1.0.1',
+136 silly install resolved        'registry-url': '^3.0.0',
+136 silly install resolved        sinon: '^1.12.1' },
+136 silly install resolved     tabtab: { yo: [Object] },
+136 silly install resolved     gitHead: '3be725bd6376ead2c593741da2d374082f673b05',
+136 silly install resolved     bugs: { url: 'https://github.com/yeoman/yo/issues' },
+136 silly install resolved     _id: 'yo@1.8.5',
+136 silly install resolved     _shasum: '776ab9ec79a7882f8d4f7a9e10214fdab050d928',
+136 silly install resolved     _from: 'yo@latest',
+136 silly install resolved     _npmVersion: '3.10.3',
+136 silly install resolved     _nodeVersion: '6.3.1',
+136 silly install resolved     _npmUser: { name: 'sboudrias', email: 'admin@simonboudrias.com' },
+136 silly install resolved     dist:
+136 silly install resolved      { shasum: '776ab9ec79a7882f8d4f7a9e10214fdab050d928',
+136 silly install resolved        tarball: 'https://registry.npmjs.org/yo/-/yo-1.8.5.tgz' },
+136 silly install resolved     maintainers:
+136 silly install resolved      [ [Object],
+136 silly install resolved        [Object],
+136 silly install resolved        [Object],
+136 silly install resolved        [Object],
+136 silly install resolved        [Object],
+136 silly install resolved        [Object],
+136 silly install resolved        [Object] ],
+136 silly install resolved     _npmOperationalInternal:
+136 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+136 silly install resolved        tmp: 'tmp/yo-1.8.5.tgz_1472703392595_0.8789802109822631' },
+136 silly install resolved     directories: {},
+136 silly install resolved     _resolved: 'https://registry.npmjs.org/yo/-/yo-1.8.5.tgz' },
+136 silly install resolved   { name: 'generator-aspnet',
+136 silly install resolved     version: '0.2.5',
+136 silly install resolved     description: 'Yeoman generator for ASP.NET Core apps',
+136 silly install resolved     license: 'Apache-2.0',
+136 silly install resolved     main: 'app/index.js',
+136 silly install resolved     repository:
+136 silly install resolved      { type: 'git',
+136 silly install resolved        url: 'git+https://github.com/omnisharp/generator-aspnet.git' },
+136 silly install resolved     contributors: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+136 silly install resolved     engines: { node: '>=0.10.0' },
+136 silly install resolved     keywords:
+136 silly install resolved      [ 'yeoman-generator',
+136 silly install resolved        'ASP.NET',
+136 silly install resolved        'ASP.NET Core',
+136 silly install resolved        'aspnet',
+136 silly install resolved        'aspnet core',
+136 silly install resolved        'ASP',
+136 silly install resolved        '.net',
+136 silly install resolved        'net',
+136 silly install resolved        'core',
+136 silly install resolved        'dnx' ],
+136 silly install resolved     dependencies:
+136 silly install resolved      { chai: '^3.3.0',
+136 silly install resolved        chalk: '^1.1.3',
+136 silly install resolved        'findup-sync': '^0.3.0',
+136 silly install resolved        mkdirp: '^0.5.1',
+136 silly install resolved        nconf: '^0.8.2',
+136 silly install resolved        uuid: '^2.0.1',
+136 silly install resolved        vs_projectname: '^1.0.0',
+136 silly install resolved        'yeoman-generator': '^0.19.2',
+136 silly install resolved        yosay: '^1.2.0' },
+136 silly install resolved     devDependencies: { mocha: '^2.3.3' },
+136 silly install resolved     scripts: { test: 'mocha' },
+136 silly install resolved     gitHead: 'b506e7e28c4f1f9c4519a16584054f2c2322bc19',
+136 silly install resolved     bugs: { url: 'https://github.com/omnisharp/generator-aspnet/issues' },
+136 silly install resolved     homepage: 'https://github.com/omnisharp/generator-aspnet#readme',
+136 silly install resolved     _id: 'generator-aspnet@0.2.5',
+136 silly install resolved     _shasum: '6a644ebd2537debf8c5ca8d69dcda93ba62e2f15',
+136 silly install resolved     _from: 'generator-aspnet@latest',
+136 silly install resolved     _npmVersion: '4.0.2',
+136 silly install resolved     _nodeVersion: '0.10.48',
+136 silly install resolved     _npmUser: { name: 'sayedha', email: 'sayed.hashimi@gmail.com' },
+136 silly install resolved     dist:
+136 silly install resolved      { shasum: '6a644ebd2537debf8c5ca8d69dcda93ba62e2f15',
+136 silly install resolved        tarball: 'https://registry.npmjs.org/generator-aspnet/-/generator-aspnet-0.2.5.tgz' },
+136 silly install resolved     maintainers: [ [Object], [Object] ],
+136 silly install resolved     _npmOperationalInternal:
+136 silly install resolved      { host: 'packages-18-east.internal.npmjs.com',
+136 silly install resolved        tmp: 'tmp/generator-aspnet-0.2.5.tgz_1479853892288_0.7860521643888205' },
+136 silly install resolved     directories: {},
+136 silly install resolved     _resolved: 'https://registry.npmjs.org/generator-aspnet/-/generator-aspnet-0.2.5.tgz' },
+136 silly install resolved   { name: 'bower',
+136 silly install resolved     version: '1.8.0',
+136 silly install resolved     description: 'The browser package manager',
+136 silly install resolved     author: { name: 'Twitter' },
+136 silly install resolved     license: 'MIT',
+136 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/bower/bower.git' },
+136 silly install resolved     main: 'lib',
+136 silly install resolved     bin: { bower: 'bin/bower' },
+136 silly install resolved     homepage: 'http://bower.io',
+136 silly install resolved     engines: { node: '>=0.10.0' },
+136 silly install resolved     keywords: [ 'bower' ],
+136 silly install resolved     files: [ 'bin', 'lib' ],
+136 silly install resolved     bugs: { url: 'https://github.com/bower/bower/issues' },
+136 silly install resolved     _id: 'bower@1.8.0',
+136 silly install resolved     scripts: {},
+136 silly install resolved     _shasum: '55dbebef0ad9155382d9e9d3e497c1372345b44a',
+136 silly install resolved     _from: 'bower@latest',
+136 silly install resolved     _npmVersion: '3.10.9',
+136 silly install resolved     _nodeVersion: '4.4.6',
+136 silly install resolved     _npmUser: { name: 'sheerun', email: 'sheerun@sher.pl' },
+136 silly install resolved     dist:
+136 silly install resolved      { shasum: '55dbebef0ad9155382d9e9d3e497c1372345b44a',
+136 silly install resolved        tarball: 'https://registry.npmjs.org/bower/-/bower-1.8.0.tgz' },
+136 silly install resolved     maintainers:
+136 silly install resolved      [ [Object],
+136 silly install resolved        [Object],
+136 silly install resolved        [Object],
+136 silly install resolved        [Object],
+136 silly install resolved        [Object],
+136 silly install resolved        [Object],
+136 silly install resolved        [Object] ],
+136 silly install resolved     _npmOperationalInternal:
+136 silly install resolved      { host: 'packages-18-east.internal.npmjs.com',
+136 silly install resolved        tmp: 'tmp/bower-1.8.0.tgz_1478512918020_0.7136248126626015' },
+136 silly install resolved     directories: {},
+136 silly install resolved     _resolved: 'https://registry.npmjs.org/bower/-/bower-1.8.0.tgz' } ]
+137 info install yo@1.8.5 into /usr/local/lib
+138 info install generator-aspnet@0.2.5 into /usr/local/lib
+139 info install bower@1.8.0 into /usr/local/lib
+140 info installOne yo@1.8.5
+141 verbose installOne of yo to /usr/local/lib not in flight; installing
+142 verbose correctMkdir /Users/vaclavmachka/.npm/_locks correctMkdir not in flight; initializing
+143 info installOne generator-aspnet@0.2.5
+144 verbose installOne of generator-aspnet to /usr/local/lib not in flight; installing
+145 verbose correctMkdir /Users/vaclavmachka/.npm/_locks correctMkdir already in flight; waiting
+146 info installOne bower@1.8.0
+147 verbose installOne of bower to /usr/local/lib not in flight; installing
+148 verbose correctMkdir /Users/vaclavmachka/.npm/_locks correctMkdir already in flight; waiting
+149 verbose lock using /Users/vaclavmachka/.npm/_locks/yo-c80abb7e04f27e35.lock for /usr/local/lib/node_modules/yo
+150 silly install write writing yo 1.8.5 to /usr/local/lib/node_modules/yo
+151 verbose lock using /Users/vaclavmachka/.npm/_locks/generator-aspnet-b9cbfe278f2983cc.lock for /usr/local/lib/node_modules/generator-aspnet
+152 verbose lock using /Users/vaclavmachka/.npm/_locks/bower-e8debc5417026b57.lock for /usr/local/lib/node_modules/bower
+153 silly install write writing generator-aspnet 0.2.5 to /usr/local/lib/node_modules/generator-aspnet
+154 silly install write writing bower 1.8.0 to /usr/local/lib/node_modules/bower
+155 verbose unbuild lib/node_modules/yo
+156 verbose unbuild lib/node_modules/generator-aspnet
+157 verbose unbuild lib/node_modules/bower
+158 silly gentlyRm /usr/local/lib/node_modules/yo is being purged from base /usr/local
+159 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/yo
+160 silly gentlyRm /usr/local/lib/node_modules/generator-aspnet is being purged from base /usr/local
+161 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/generator-aspnet
+162 verbose tar unpack /Users/vaclavmachka/.npm/yo/1.8.5/package.tgz
+163 verbose tar unpacking to /usr/local/lib/node_modules/yo
+164 silly gentlyRm /usr/local/lib/node_modules/yo is being purged
+165 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/yo
+166 verbose tar unpack /Users/vaclavmachka/.npm/generator-aspnet/0.2.5/package.tgz
+167 verbose tar unpacking to /usr/local/lib/node_modules/generator-aspnet
+168 silly gentlyRm /usr/local/lib/node_modules/generator-aspnet is being purged
+169 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/generator-aspnet
+170 silly gentlyRm /usr/local/lib/node_modules/bower is being purged from base /usr/local
+171 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/bower
+172 silly gunzTarPerm modes [ '755', '644' ]
+173 silly gunzTarPerm modes [ '755', '644' ]
+174 verbose tar unpack /Users/vaclavmachka/.npm/bower/1.8.0/package.tgz
+175 verbose tar unpacking to /usr/local/lib/node_modules/bower
+176 silly gentlyRm /usr/local/lib/node_modules/bower is being purged
+177 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/bower
+178 silly gunzTarPerm modes [ '755', '644' ]
+179 error tar.unpack untar error /Users/vaclavmachka/.npm/yo/1.8.5/package.tgz
+180 error tar.unpack untar error /Users/vaclavmachka/.npm/generator-aspnet/0.2.5/package.tgz
+181 verbose unlock done using /Users/vaclavmachka/.npm/_locks/yo-c80abb7e04f27e35.lock for /usr/local/lib/node_modules/yo
+182 error tar.unpack untar error /Users/vaclavmachka/.npm/bower/1.8.0/package.tgz
+183 verbose unlock done using /Users/vaclavmachka/.npm/_locks/generator-aspnet-b9cbfe278f2983cc.lock for /usr/local/lib/node_modules/generator-aspnet
+184 verbose unlock done using /Users/vaclavmachka/.npm/_locks/bower-e8debc5417026b57.lock for /usr/local/lib/node_modules/bower
+185 verbose fstream_path /usr/local/lib/node_modules/yo
+186 verbose fstream_type Directory
+187 verbose fstream_class DirWriter
+188 verbose stack Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/yo'
+188 verbose stack     at Error (native)
+189 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25
+189 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53
+189 verbose fstream_stack FSReqWrap.oncomplete (fs.js:82:15)
+190 verbose cwd /Users/vaclavmachka/Projekty/Vaclav
+191 error Darwin 16.1.0
+192 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "yo" "generator-aspnet" "bower"
+193 error node v4.5.0
+194 error npm  v2.15.9
+195 error path /usr/local/lib/node_modules/yo
+196 error code EACCES
+197 error errno -13
+198 error syscall mkdir
+199 error Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/yo'
+199 error     at Error (native)
+199 error  { [Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/yo']
+199 error   errno: -13,
+199 error   code: 'EACCES',
+199 error   syscall: 'mkdir',
+199 error   path: '/usr/local/lib/node_modules/yo',
+199 error   fstream_type: 'Directory',
+199 error   fstream_path: '/usr/local/lib/node_modules/yo',
+199 error   fstream_class: 'DirWriter',
+199 error   fstream_stack:
+199 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25',
+199 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53',
+199 error      'FSReqWrap.oncomplete (fs.js:82:15)' ] }
+200 error Please try running this command again as root/Administrator.
+201 verbose exit [ -13, true ]
+202 verbose unbuild lib/node_modules/yo
+203 silly gentlyRm /usr/local/lib/node_modules/yo is being purged from base /usr/local
+204 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/yo
+205 verbose unbuild lib/node_modules/generator-aspnet
+206 silly gentlyRm /usr/local/lib/node_modules/generator-aspnet is being purged from base /usr/local
+207 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/generator-aspnet
+208 verbose unbuild lib/node_modules/bower
+209 silly gentlyRm /usr/local/lib/node_modules/bower is being purged from base /usr/local
+210 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/bower

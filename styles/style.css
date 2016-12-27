@@ -9,11 +9,11 @@ html{
     font-size: 16px;
     position: relative;
     min-height: 100%;
-    /*background: url(../images/kitchen.jpg) no-repeat center center fixed;
+    background: url(../images/kitchen2.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;*/
+    background-size: cover;
 }
 
 body {
@@ -21,8 +21,12 @@ body {
     font-family: 'Hind', sans-serif;
 }
 
+.navbar{
+    margin: 0;
+}
+
 .navbar-default {
-    padding: 1rem 0 1rem 0;
+    padding: 2rem 0;
     border-bottom: .05rem solid #fff;
     background-color: #7A91A9;
 }
@@ -92,7 +96,7 @@ header p{
 }
 
 .content{
-    padding: 1rem 0 8rem 0;
+    padding: 1.5rem 0 8rem 0;
 }
 
 @media (max-width: 768px){
@@ -146,7 +150,11 @@ footer p{
 body{
     font-size: 16px;
     line-height: 1.5rem;
-    color: #404040;
+    color: #e0e0e0;
+}
+
+div.outer-container{
+
 }
 
 #mapa{

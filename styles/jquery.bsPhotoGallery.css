@@ -39,6 +39,7 @@
 .imgWrapper {
   overflow: hidden;
   max-height: 150px;
+  border: 1px solid #fff;
 }
 
 a.bsp-controls, 
@@ -95,9 +96,9 @@ a.bsp-controls:hover {
     padding: 0;
 }
 
-.bsPhotoGallery li img{
+/*.bsPhotoGallery li img{
     border: 1px solid #7A91A9;
-}
+}*/
 
 .modal-dialog {
     width: 600px;

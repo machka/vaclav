@@ -86,6 +86,12 @@ header p{
     color: #fff;
 }
 
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+    background-color: #E8850C;
+    border-radius: 4px;
+    color: #fff;
+}
+
 @media (min-width: 768px){
     .navbar-nav>li>a {
         padding-top: 12px;
